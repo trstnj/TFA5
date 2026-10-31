@@ -1,0 +1,151 @@
+
+/* ----------------------------------
+   TFA5 - POS System
+   Shared Stylesheet
+---------------------------------- */
+
+/* General Page Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #253044;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #203354;
+    padding: 18px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 9px 14px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #36547e;
+}
+
+nav a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+/* Divider */
+hr {
+    display: none;
+}
+
+/* Main Content Container */
+main {
+    width: calc(100% - 40px);
+    max-width: 1050px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border: 1px solid #e3e8ef;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+/* Page Headings */
+h1 {
+    color: #203354;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+/* Paragraphs */
+p {
+    color: #596579;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* Account Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    font-size: 14px;
+    border: 1px solid #dce3ec;
+}
+
+/* Table Headers */
+th {
+    background-color: #eaf0f7;
+    color: #203354;
+    font-weight: 600;
+    text-align: left;
+    padding: 14px 16px;
+    border: 1px solid #dce3ec;
+}
+
+/* Table Cells */
+td {
+    padding: 13px 16px;
+    border: 1px solid #dce3ec;
+    color: #354257;
+}
+
+/* Alternating Row Colors */
+tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* Table Hover Effect */
+tbody tr:hover {
+    background-color: #edf4fc;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+    nav {
+        padding: 12px;
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+    main {
+        width: calc(100% - 20px);
+        margin: 20px auto;
+        padding: 18px;
+        overflow-x: auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    table {
+        min-width: 450px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
